@@ -1,19 +1,50 @@
-@media screen and(min-width: 500px){
-    
-}
+@media screen and(min-width: 500px) {}
 
 @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
+}
 
 
 
 @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+    /* hide hamburger button */
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .stuff {
+    margin: 1rem auto;
+  }
+}
