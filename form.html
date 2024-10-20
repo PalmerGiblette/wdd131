@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmer Giblette | WDD 131</title>
+
+    <meta name="description" content="Product Review Form" />
+    <meta name="author" content="Palmer Giblette" />
+
+
+    <link type="text/css" rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Product Review Form</h1>
+    <form method="get" action="review.html" class="wf1">
+
+        <fieldset>
+            <legend>Product Name</legend>
+            <!-- Drop down menu option here-->
+            <label>
+                <select name="product">
+                    <option value="">Choose product...</option>
+
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+
+            <label><input type="radio" name="rating" value="1star" required>★</label>
+            <label><input type="radio" name="rating" value="2star">★★</label>
+            <label><input type="radio" name="rating" value="3star">★★★</label>
+            <label><input type="radio" name="rating" value="4star">★★★★</label>
+            <label><input type="radio" name="rating" value="5star">★★★★★</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Date of Installation</legend>
+            <!--Add in here a choose a date button-->
+            <label><input type="date" name="hold" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which features did you find useful in the product?</legend>
+            <legend>(check all that apply)</legend>
+
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="easeofuse" value="yes">Ease of use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes">Design</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Written Review (optional)</legend>
+            <label><input type="text" name="review" optional></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>First name (optional)</legend>
+            <label><input type="text" name="fname" optional></label>
+        </fieldset>
+
+        <fieldset>
+            <!-- Submit button-->
+            <input type="submit" value="Post Review">
+        </fieldset>
+
+
+    </form>
+
+
+    <footer>
+        <p> &copy; <span id="copy"></span> - Palmer Giblette, Montana</p>
+        <p>Last Modified; <span id="lastmod"></span></p>
+    </footer>
+</body>

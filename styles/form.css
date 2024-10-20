@@ -1,0 +1,12 @@
+/*----------Form styling -----------------*/
+
+.wf1 fieldset {
+    margin: 1rem 0;
+    border: 1px solid rgb(213, 165, 255);
+
+}
+
+body {
+    font-size: medium;
+    text-align: left;
+}
