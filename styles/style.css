@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Rubik&display=swap');
-
-#content{
+#content {
   margin: 0 auto;
 }
 
@@ -11,30 +7,29 @@ content {
 }
 
 header {
-  background-color: rgba(20,30,13, 0.7);
+  background-color: rgba(20, 30, 13, 0.7);
   display: grid;
   grid-template-columns: 150px auto;
 }
 
 body {
-    background-color: lightblue;
-    font-family: "Nunito", "IBM Plex Sans","Rubik";
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
+  background-color: lightblue;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 
-  }
-  
-h1 {
-    color: navy;
-    margin-left: 20px;
 }
 
-h2{
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+h2 {
   margin: 0;
 }
 
-nav a{
+nav a {
   background-color: #595959;
   text-decoration: none;
   color: #fcfbfb;
@@ -44,8 +39,8 @@ nav a{
   justify-content: space-around;
 }
 
-footer{
-  padding:25px, 50px;
+footer {
+  padding: 25px, 50px;
   background-color: #fcfbfb;
   margin-top: 200px;
   display: flex;
@@ -57,23 +52,23 @@ footer a {
   text-decoration: none;
 }
 
-footer p{
+footer p {
   font-size: 1.2em;
 }
 
-footer p a:hover{
+footer p a:hover {
   text-decoration: underline;
 }
 
-footer .social img{
+footer .social img {
   padding-top: 15px;
 }
 
-main section{
+main section {
   text-align: center;
 }
 
-content{
+content {
   text-align: center;
 
 }
@@ -81,25 +76,22 @@ content{
 
 
 .home-title {
-    font-family: "Nunito", "IBM Plex Sans", "Rubik";
-    font-size: 2em;
+  font-family: "Nunito", "IBM Plex Sans", "Rubik";
+  font-size: 2em;
 }
 
 
 
-main section img{
+main section img {
   box-sizing: border-box;
 }
 
 
 
-footer{
+footer {
   margin-top: 200px;
 }
 
 #background {
   height: 725px;
 }
-
-
-

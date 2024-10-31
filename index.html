@@ -3,39 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palmer Giblette | WDD 131</title>
-    <link type="text/css" rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/script.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Palmer G.</title>
+
+    <meta name="description"
+        content="WDD 131- Dynamic Web Fundamentals. This is assignment 1, where we are to develop a basic site." />
+    <meta name="author" content="Palmer Giblette" />
+
+
+    <link type="text/css" rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="content">
-        <header>
+    <header>
+        <h1>
+            WDD 131: Dynamic Web Fundamentals - Palmer Giblette
+        </h1>
+        <nav>
+            <a href="www.linkedin.com/in/palmer-giblette">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p13-p14#p13">Favorite
+                Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
 
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#">Resume</a>
-                <a href=>Professional Projects</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
-        </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/profilepic.jpg" alt="People enjoying white water rafting">
-            </div>
-            <section id="hero-msg">
-                <h1 class="home-title">About Me</h1>
-                <h4>I am a student who is currently in my senior year at BYU-I. </h4>
-                <h4> Currently studying network engieering. </h4>
+    <main>
+        <div class="row">
+            <section class="card">
+                <h2>About me</h2>
+                <p>My name is Palmer G. I am currently studying CIT at BYU-Idaho.
+                    I am from Montana, and loved the country side growing up and the different perspective I now have
+                    because of it.
+                    I have a wonderful little family. I will be going on nearly four years married to my wife, whom I
+                    have
+                    known for nearly twelve years.
+                </p>
+                <img src="images/profilepic.jpg" alt="it's me!" height="200px" width="200px">
 
-
+            </section>
+            <section class="card2">
+                <h2>Useful links</h2>
+                <a href="https://www.w3schools.com/html/default.asp">w3schools</a>
+            </section>
         </div>
-    </div>
-
     </main>
+
     <footer>
         <p> &copy; <span id="copy"></span> - Palmer Giblette, Montana</p>
         <p>Last Modified; <span id="lastmod"></span></p>
