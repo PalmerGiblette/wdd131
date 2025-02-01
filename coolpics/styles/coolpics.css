@@ -21,7 +21,11 @@ header {
     padding: 20px 0;
 }
 
-/* Navigation Styles */
+/* Navigation */
+nav {
+    position: relative;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -47,43 +51,123 @@ nav a:hover {
     color: white;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+/* Mobile menu toggle button, allows for hidden part of the menu button */
+nav .menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
 }
 
-/* Gallery Container */
+
+/* Gallery grid*/
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 equal columns */
+    /* 3 equal columns by default */
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    /* Limit the width of the gallery */
+    margin: 0 auto;
+    /* Center the gallery on the page */
 }
 
-/* Style for each gallery item */
-.gallery-item {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-}
 
-/* Style for the images */
-.gallery-item img {
+
+/* Modal, used for enlargening images */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    /* here I can adjust the image from making it too large or small in modal */
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The enlarged modal pic */
+.modal-content {
+    margin: auto;
     display: block;
+    max-width: 80%;
+    max-height: 80%;
 }
 
-/* Optional: Style for captions */
-.gallery-item figcaption {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #333;
+/* X button on modal */
+.close {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
 }
 
-/* Adjustments for smaller screens */
+.close:hover,
+.close:focus {
+    color: #a0ae00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Caption for the modal */
+#caption {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
+
+/*all screen adjustments for mobile, and for desktop, and everything inbetween */
+/* I just hate mixing the two css types together, personal preference */
+
+
+/* Adjustments for smaller screens (like mobile) */
+@media (max-width: 700px) {
+
+    /* Show the menu toggle button only on small screens */
+    nav .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+/* Hides the button on larger screens (like desktop or even a tablet) */
+@media (min-width: 701px) {
+    nav .menu-toggle {
+        display: none;
+    }
+}
+
+/* Adjustments for larger screens */
 @media (max-width: 1000px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -96,17 +180,4 @@ main {
         grid-template-columns: 1fr;
         /* 1 column on mobile */
     }
-}
-
-/* Section Styling */
-section {
-    margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
 }

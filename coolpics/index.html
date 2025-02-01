@@ -6,11 +6,9 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Palmer G.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <meta name="description"
         content="WDD 131- Dynamic Web Fundamentals. This is assignment 1, where we are to develop a basic site." />
     <meta name="author" content="Palmer Giblette" />
-
 
     <link type="text/css" rel="stylesheet" href="styles/coolpics.css" />
     <script src="scripts/coolpics.js" defer></script>
@@ -24,61 +22,61 @@
 <body>
     <header>
         <h1>Cools pics</h1>
-        <!-- Navigation Section -->
+        <!--updated menu with a button that now toggles accordinly -->
         <nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#People">Gallery</a></li>
-                <li><a href="#Places">Gallery</a></li>
+                <li><a href="#People">People</a></li>
+                <li><a href="#Places">Places</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
         <section class="gallery">
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
             <figure class="gallery-item">
-                <img src="images/norris-sm.jpeg" alt="picture">
+                <img src="images/norris-sm.jpeg" alt="" data-src="images/norris-full.jpeg">
             </figure>
         </section>
 
-
-
-
+        <!--modal for the images in the gallery, or other images -->>
+        <div id="image-modal" class="modal">
+            <span id="close-modal" class="close">&times;</span>
+            <img id="modal-image" class="modal-content">
+            <div id="caption"></div>
+        </div>
     </main>
 
     <footer>
-        <p>©2023 Not a real site 😀</p>
+        <p>©2025 Not a real site 😀</p>
     </footer>
-
-
 </body>
-
 
 </html>
