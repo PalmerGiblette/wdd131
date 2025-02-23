@@ -1,0 +1,194 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #9188a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+
+.card-logo {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+
+
+.card-container {
+    position: relative;
+    width: 500px;
+    height: 280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-back {
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-stripe {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-radius: 5px;
+}
+
+.cvv-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid gray;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.cvv-box input {
+    width: 90%;
+    height: 80%;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    color: black;
+    cursor: text;
+}
+
+.cvv-box input:focus {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+
+.card-front {
+    background-color: #3782d1;
+    /* Blue front */
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+
+label {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#card-number {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 90%;
+}
+
+
+#cardholder-name {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width: 60%;
+}
+
+#expiry-date {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 20%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 500px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
