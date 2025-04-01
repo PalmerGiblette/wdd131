@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDD 131 - Dynamic Web Fundamentals - Palmer G.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="WDD 131- Dynamic Web Fundamentals. Blog/Book Review" />
+    <meta name="author" content="Palmer Giblette" />
+
+    <link type="text/css" rel="stylesheet" href="styles/blog.css" />
+    <script src="scripts/blog.js" defer></script>
+    <script src="scripts/scripting.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Skip button to main content -->
+    <div class="skiptocontent">
+        <a href="./#maincontent">Skip to main content</a>
+    </div>
+
+    <header>
+        <h1>Kids Read for Fun</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Here will be out main content, mainly from the JS files -->
+    <main id="maincontent" class="content-wrapper">
+        <div class="book-list">
+            <!-- Our scripting.js file will connect here -->
+        </div>
+
+        <!-- Various labels, and options for user input/filters -->
+        <aside class="filters">
+            <label for="sort">Sort:</label>
+            <select id="sort">
+                <option value="title">Title</option>
+                <option value="date">Date</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <select id="age">
+                <option value="">All</option>
+                <option value="7-9">7–9</option>
+                <option value="10-14">10–14</option>
+                <option value="15+">15+</option>
+            </select>
+
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="">All</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Mystery">Mystery</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="">All</option>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+            </select>
+        </aside>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; WDD131 Blog 1, Palmer G.</p>
+    </footer>
+
+</body>
+
+</html>
