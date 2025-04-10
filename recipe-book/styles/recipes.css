@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Amatic SC', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: white;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-title img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.logo-title h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-card h2 {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+.recipe-description {
+    display: none;
+    margin-top: 0.5rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.social {
+    margin-bottom: 0.5rem;
+}
+
+.social img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+
+/* --- Different Screens --- */
+
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .recipe-card {
+        width: 48%;
+        align-items: flex-start;
+    }
+
+    .recipe-description {
+        display: block;
+    }
+
+    .logo-title {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo-title h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 960px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    body>* {
+        max-width: 960px;
+        width: 100%;
+    }
+
+    main {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .recipe-card {
+        width: 30%;
+    }
+}
